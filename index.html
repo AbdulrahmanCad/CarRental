@@ -15,90 +15,89 @@
 </head>
 <body>
 
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">CarRental</a>
+  <!-- Header top navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-light bg-light">
+        <a class="navbar-brand" href="#" style="font-size: 25px; margin-left: 100px;">CarRental</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#" style="font-size: 20px;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cars">Cars</a>
+              <a class="nav-link" href="#cars" style="font-size: 20px;">Cars</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#blog" style="font-size: 20px;">Blogs</a>
             </li>
           </ul>
         </div>
       </nav>
 
-        <div class="car-container" id="cars">
+      <main>
+        <article>
+          <section class="section hero" id="home">
+            <div class="container">
+              <div class="hero-content">
+                <h2 class="h1 hero-title">Rent Your Car With CarRental. Start Now !</h2>
+              </div>
+              <div class="hero-banner"></div>
+              <div class="hero-form">
+                <div class="input-wrapper">
+                  <label for="input-1" class="input-label" style="font-weight: bold;">Car Name</label>
+                  <input type="text" name="car-model" id="nameId" class="input-field"
+                    placeholder="eg Toyota...">
+                </div>
+                <div class="input-wrapper">
+                  <label for="input-2" class="input-label" style="font-weight: bold;">Model</label>
+                  <input type="text" name="monthly-pay" id="modelId" class="input-field" placeholder="eg 2021...">
+                </div>
+                <div class="input-wrapper">
+                  <label for="input-3" class="input-label" style="font-weight: bold;">Price</label>
+                  <input type="text" name="year" id="priceId" class="input-field" placeholder="eg 125...">
+                </div>
+                <button onclick="search()" class="btn">Search</button>
+              </div>
+    
+            </div>
+          </section>
+    
+          <section class="section featured-car" id="featured-car">
+            <div class="container">
+              <div class="title-wrapper">
+                <h2 class="h2 section-title">Featured cars</h2>
+              </div>
+              <ul class="featured-car-list" id="cars">
+              </ul>
+            </div>
+          </section>
+    
+          <section class="section blog" id="blog">
+            <div class="container">
+              <h2 class="h2 section-title">Our Blog</h2>
+              <ul class="blog-list has-scrollbar" id="blogs">
+              </ul>
+            </div>
+          </section>
+    
+        </article>
+      </main>
 
-          <div class="title-wrapper">
-            <h2>List of cars</h2>
-          </div>
-
-          <ul class="car-list">
-            <li>
-                <div class="card">
-                    <img src="./assets/images/kia.png" alt="Car" style="width:100%">
-                    <div class="container">
-                      <h4><b>Kia Sportage or similar | SUV (IFAR)</b></h4> 
-                      <p>5 Seats</p>
-                      <p>Automatic</p> 
-                      <p>150 SAR / DAY</p> 
-                      <button class="btn button"> Rent Now</button>
-                    </div>
-                  </div>
-                  <br/>
-            </li>
-            <br/>
-            <li>
-                <div class="card">
-                    <img src="./assets/images/tahoe.webp" alt="Car" style="width:100%">
-                    <div class="container">
-                      <h4><b>Chevrolet Tahoe or similar | SUV (FFAR)</b></h4> 
-                      <p>7 Seats</p>
-                      <p>Automatic</p> 
-                      <p>200 SAR / DAY</p> 
-                      <button class="btn button"> Rent Now</button>
-                    </div>
-                  </div>
-                  <br/>
-            </li>
-            <br/>
-            <li>
-                <div class="card">
-                    <img src="./assets/images/rio.png" alt="Car" style="width:100%">
-                    <div class="container">
-                      <h4><b>Kia Rio or similar | Sedan (MDAR)</b></h4> 
-                      <p>5 Seats</p>
-                      <p>Automatic</p> 
-                      <p>100 SAR / DAY</p> 
-                      <button class="btn button"> Rent Now</button>
-                    </div>
-                  </div>
-                  <br/>
-            </li>
-
-          </ul>
-
-        </div>
-
+ 
 
         <div class="footer-basic" id="about">
             <footer>
                 <ul class="list-inline">
                     <li class="list-inline-item"><a href="#">Home</a></li>
                     <li class="list-inline-item"><a href="#cars">Cars</a></li>
-                    <li class="list-inline-item"><a href="#about">About</a></li>
+                    <li class="list-inline-item"><a href="#blogs">Blogs</a></li>
                 </ul>
                 <p class="copyright">MyCarRental © 2023</p>
             </footer>
         </div>
+        <script src="./assets/js/carsScript.js"></script>
+        <script src="./assets/js/blogsScript.js"></script>
 </body>
 </html>
